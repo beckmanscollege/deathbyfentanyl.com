@@ -1,75 +1,66 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  scroll-snap-type: y mandatory;
+	background-color: #000;
+	color: #fff;
+	font-size: 48px;
+	text-align: center;
+	scroll-snap-type: y mandatory;
 }
 
 .count-up {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  color: #fff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	scroll-snap-align: start;
 }
 
-.count-up h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+.timer-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
 }
 
-.count-up p {
-  font-size: 10rem;
-  font-weight: bold;
+.columns {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: start;
 }
 
-.content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.column {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
+.column p {
+	font-size: 36px;
 }
 
-.section:nth-child(odd) {
-  background-color: #ff0033;
-  color: #fff;
+/* Colors for each column */
+.column:nth-child(1) {
+	background-color: #FF5733;
 }
 
-.section:nth-child(even) {
-  background-color: #0000ff;
-  color: #fff;
+.column:nth-child(2) {
+	background-color: #581845;
 }
 
-.section:nth-child(n+5) {
-  background-color: #00ff00;
-  color: #000;
+.column:nth-child(3) {
+	background-color: #C70039;
 }
 
-.section:nth-child(n+5) h2 {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .count-up h1 {
-    font-size: 4rem;
-  }
-  
-  .count-up p {
-    font-size: 20rem;
-  }
-  
-  .section:nth-child(n+5) h2 {
-    font-size: 4rem;
-  }
+.column:nth-child(4) {
+	background-color: #FFC300;
 }

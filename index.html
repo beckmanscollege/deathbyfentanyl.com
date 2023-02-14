@@ -1,147 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Fentanyl Death Count Up</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        scroll-snap-type: y mandatory;
-      }
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Count Up Timer</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="count-up">
+		<h1>WORLD WIDE DEATH LIVE COUNT UP CAUSED BY FENTANYL</h1>
+		<div class="timer-container">
+			<div id="timer">11667</div>
+		</div>
+	</section>
 
-      .count-up {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #000;
-        color: #fff;
-        scroll-snap-align: start;
-      }
+	<section class="columns">
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+	</section>
 
-      .count-up h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
+	<section class="columns">
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+	</section>
 
-      .count-up p {
-        font-size: 10rem;
-        font-weight: bold;
-      }
+	<section class="columns">
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>This is it</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+		<div class="column">
+			<p>Help</p>
+		</div>
+	</section>
 
-      .content {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .section {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        scroll-snap-align: start;
-      }
-
-      .section:nth-child(odd) {
-        background-color: #ff0033;
-        color: #fff;
-      }
-
-      .section:nth-child(even) {
-        background-color: #0000ff;
-        color: #fff;
-      }
-
-      .section:nth-child(n+5) {
-        background-color: #00ff00;
-        color: #000;
-      }
-
-      .section:nth-child(n+5) h2 {
-        font-size: 2rem;
-      }
-
-      .row {
-        display: flex;
-        width: 100%;
-        height: 100%;
-      }
-
-      .column {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        text-align: center;
-      }
-
-      .column:nth-child(odd) {
-        background-color: #ff0033;
-        color: #fff;
-      }
-
-      .column:nth-child(even) {
-        background-color: #0000ff;
-        color: #fff;
-      }
-
-      .column:nth-child(n+3) {
-        background-color: #00ff00;
-        color: #000;
-      }
-
-      .column:nth-child(n+3) h2 {
-        font-size: 2rem;
-      }
-
-      .col-2 {
-        flex: 2;
-      }
-
-      @media screen and (min-width: 768px) {
-        .count-up h1 {
-          font-size: 4rem;
-        }
-
-        .count-up p {
-          font-size: 20rem;
-        }
-
-        .section:nth-child(n+5) h2 {
-          font-size: 4rem;
-        }
-
-        .row {
-          flex-wrap: wrap;
-        }
-
-        .column {
-          flex-basis: 50%;
-          height: 50%;
-        }
-
-        .column:nth-child(n+3) {
-          background-color: transparent;
-          color: #000;
-        }
-
-        .col-2 {
-          flex-basis: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="count-up">
-      <h1>WORLD WIDE DEATH LIVE COUNT UP CAUSED BY FENTANYL</h1>
-      <p id="counter">11667</p>
-    </div>
-    <div
+	<script src="script.js"></script>
+</body>
+</html>

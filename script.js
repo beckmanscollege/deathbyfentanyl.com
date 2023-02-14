@@ -1,7 +1,8 @@
-const countUpElement = document.getElementById('count');
+const timer = document.getElementById('timer');
+
 let count = 11667;
 
 setInterval(() => {
-  count++;
-  countUpElement.innerHTML = count;
+	count++;
+	timer.textContent = count;
 }, 7000);
