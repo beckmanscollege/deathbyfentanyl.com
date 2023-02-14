@@ -4,6 +4,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   color: #ffffff;
+  scroll-snap-type: y mandatory;
 }
 
 .page1 {
@@ -12,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .page2 {
@@ -20,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .page3 {
@@ -28,10 +31,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .count-up {
-  font-size: 800px;
+  font-size: 500px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
