@@ -1,66 +1,71 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background-color: #000;
-	color: #fff;
-	font-size: 48px;
-	text-align: center;
-	scroll-snap-type: y mandatory;
+  background-color: #000;
+  color: #fff;
+  font-size: 200px;
+  text-align: center;
+  scroll-snap-type: y mandatory;
 }
 
 .count-up {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
 }
 
 .timer-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+#timer {
+  font-size: 500px;
 }
 
 .columns {
-	height: 100vh;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 
 .column {
-	width: 50%;
-	height: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .column p {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 /* Colors for each column */
 .column:nth-child(1) {
-	background-color: #FF5733;
+  background-color: #FF5733;
 }
 
 .column:nth-child(2) {
-	background-color: #581845;
+  background-color: #581845;
 }
 
 .column:nth-child(3) {
-	background-color: #C70039;
+  background-color: #C70039;
 }
 
 .column:nth-child(4) {
-	background-color: #FFC300;
+  background-color: #FFC300;
 }
