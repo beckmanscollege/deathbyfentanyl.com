@@ -1,8 +1,15 @@
-const countUp = document.getElementById('count-up');
+window.onload = function() {
+  startCountUp();
+}
 
-let count = 11667;
-
-setInterval(() => {
-  count++;
-  countUp.textContent = count;
-}, 7000);
+function startCountUp() {
+  var countUp = document.querySelector('.count-up');
+  var number = parseInt(countUp.innerHTML);
+  var intervalId = setInterval(function() {
+    number++;
+    countUp.innerHTML = number;
+    if (number >= 11700) {
+      clearInterval(intervalId);
+    }
+  }, 10);
+}
