@@ -1,15 +1,8 @@
-window.onload = function() {
-  startCountUp();
-}
+const countUp = document.getElementsByClassName('count-up')[0];
 
-function startCountUp() {
-  var countUp = document.querySelector('.count-up');
-  var number = parseInt(countUp.innerHTML);
-  var intervalId = setInterval(function() {
-    number++;
-    countUp.innerHTML = number;
-    if (number >= 11700) {
-      clearInterval(intervalId);
-    }
-  }, 10);
-}
+let count = 11667;
+
+setInterval(() => {
+  count++;
+  countUp.textContent = count;
+}, 7000);
