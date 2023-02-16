@@ -16,8 +16,15 @@ body {
   scroll-snap-align: start;
 }
 
+.Mons{
+  width:100vw;
+  height:100vw;
+  postition:absolute;
+  margin-top:10vw;
+}
+
 .page2 {
-  background-color: #1b496f;
+  background-color: #0d2b42;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,7 +33,7 @@ body {
 }
 
 .page3 {
-  background-color: #262626;
+  background-color: ;
   height: 100vh;
   display: flex;
   justify-content: center;
