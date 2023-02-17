@@ -66,6 +66,8 @@ body {
   font-size: 64px;
   font-weight: bold;
   text-align: center;
+  border: 2px solid #b9a58e;
+  box-sizing: border-box;
 }
 
 .column {
