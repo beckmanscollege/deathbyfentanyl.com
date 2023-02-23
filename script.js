@@ -10,7 +10,7 @@ setInterval(() => {
 
 const zoomElement = document.querySelector(".count-up");
 let zoom = 1;
-const ZOOM_SPEED = 0.4;
+const ZOOM_SPEED = 0.3;
 
 document.addEventListener("wheel", function(e) {
   if (e.deltaY > 0) {
@@ -53,9 +53,9 @@ const updateImage = index => {
   context.drawImage(img, 0, 0);
 }
 
-const fadeInStart = 400; // Set the scroll position to fade in the element
+const fadeInStart = 300; // Set the scroll position to fade in the element
 
-const fadeInEnd = 500; // Set the end position of the fade in transition
+const fadeInEnd = 400; // Set the end position of the fade in transition
 
 
 window.addEventListener('scroll', () => {
