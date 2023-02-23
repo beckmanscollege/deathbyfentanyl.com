@@ -53,9 +53,9 @@ const updateImage = index => {
   context.drawImage(img, 0, 0);
 }
 
-const fadeInStart = 200; // Set the scroll position to fade in the element
+const fadeInStart = 300; // Set the scroll position to fade in the element
 
-const fadeInEnd = 300; // Set the end position of the fade in transition
+const fadeInEnd = 400; // Set the end position of the fade in transition
 
 
 window.addEventListener('scroll', () => {
