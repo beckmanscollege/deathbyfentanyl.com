@@ -10,7 +10,7 @@ setInterval(() => {
 
 const zoomElement = document.querySelector(".count-up");
 let zoom = 1;
-const ZOOM_SPEED = 0.3;
+const ZOOM_SPEED = 0.4;
 
 document.addEventListener("wheel", function(e) {
   if (e.deltaY > 0) {
